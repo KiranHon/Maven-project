@@ -6,6 +6,8 @@ stages {
 
 stage('scm checkout')
   {steps {sh 'git clone https://github.com/KiranHon/Maven-project/' }}
+ stage('build job')
+  {steps{sh 'echo package is building'}}
   
 }
 }
